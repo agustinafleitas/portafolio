@@ -1,0 +1,223 @@
+h1{
+    color: white;
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 600%;
+    padding: 50px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #0b0b1b;
+}
+
+.Comienzo{
+    height: 1000px;
+    background-image: url(Imagen/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* "Background-image" es para poner una imagen de fondo. "Background-repeat" para que la imagen no se repita en el fondo; "Background-size:cover" para que ocupe todo el fondo
+Hay que tener cuidado que la imagen tenga buena calidad, para que no quede pixelada */
+
+/* Comienzo estilo menu superior */
+.Menu{
+    font-family:Arial, Helvetica, sans-serif;
+    list-style: none;
+    width: 900%;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 93%;
+    max-width: 800px;
+}
+
+.Menu ul li a{ /* "text-decoration" permite sacar el "estilo enlace" a los enlaces (linea inferior) */
+    text-decoration: none;
+    color: white;
+}
+
+
+.Menu ul li {
+    padding: 35px;
+    display: inline-block;
+}
+
+.Menu li:hover {
+background:#42b492;
+}
+/* "Hover" es una alteración de aspecto.
+Permite que el menu superior cambie de color al pasar el cursor */
+
+/* Final estilo menu superior */
+/* Inicio estilo texto inicial */
+
+.Inicio span {
+    color: rgb(255, 242, 127);
+    font-weight: bold;
+}
+
+.Inicio p {
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding:10px;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    line-height: 200%;
+    letter-spacing: 4px;
+}
+
+/* Final estilo texto inicial */
+/* Inicio estilo sección "sobre mi" */
+
+.SobreMi{
+    background-color: white;
+    margin:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#Información h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500%;
+    text-align: center;
+    color: white
+}
+
+.SobreMi ul li{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+    margin-left: 300px;
+    list-style: none;
+    display: flex;
+}
+
+.SobreMi ul li strong {
+    display: inline-block;
+    color: #42b492;
+    width: 130px;
+}
+
+.SobreMi img{
+    margin-left: 200px;
+}
+/* Final estilo sección "sobre mi" */
+/* Inicio estilo tabla educación */
+
+.TrayectoriaEducativa {
+    padding: 100px;
+}
+
+.TrayectoriaEducativa h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500%;
+    color: #42b492;
+    padding: 20px
+}
+
+.TrayectoriaEducativa table{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    border: solid 5px #42b492;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1700px;
+}
+
+.TrayectoriaEducativa th{
+    color: white;
+    font-size: 30px;
+    padding: 20px 15px;
+    text-transform: uppercase;
+}
+
+.TrayectoriaEducativa thead{
+    background-color:rgb(167, 216, 200);
+}
+
+.TrayectoriaEducativa td{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: solid 1px #42b492;
+}
+
+.TrayectoriaEducativa tbody tr:hover{ 
+    background: #26424d;
+}
+/* "Hover" es una alteración de aspecto.
+Permite que una sección cambie de color al pasar el cursor */
+
+/* Final estilo tabla educación */
+/* Inicio estilo formulario de contacto */
+
+.Formulario {
+    background-image: url(Imagen/fondo\ final.jpg);
+    background-repeat: no-repeat;
+    margin:0;
+    padding: 200px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 90px;
+}
+
+.Formulario h2{
+    margin-bottom: 10px;
+    font-size: 500%;
+    color: #42b492;
+}
+
+.Formulario p{
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+}
+
+.Formulario .datos, textarea {
+    width: 80%;
+    padding: 15px 15px;
+    font-size: 15px;
+    border: 1px solid #42b492;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+    outline: 0px;
+    
+    }
+
+    .Formulario textarea { /* El tamaño que tendrá la sección de "dejar un mensaje"*/
+        max-width: 600px;
+        min-width: 600px;
+        min-height: 200px;
+        max-width: 200px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+
+    .Formulario .BotonEnviar {
+        margin-left: 50px;
+        padding: 20px;
+        border:#42b492;
+        background: #0b0b1b;
+        color: aliceblue;
+        cursor: pointer; /* "cursor:pointer" el cursor cambia de forma al colocarlo sobre el boton "enviar" */
+        border-radius: 10px;
+    }
+    
+    /* Inicio estilo formulario de contacto */
